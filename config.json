@@ -3,8 +3,8 @@
 
     "DB_CONFIG": {
         "USER": "sec_master_read",
-        "PASSWORD": "aargo.trade@123",
-        "HOST": "103.177.180.4",
+        "PASSWORD": "",
+        "HOST": "",
         "PORT": "5432",
         "DATABASE": "coresystem"
     },
