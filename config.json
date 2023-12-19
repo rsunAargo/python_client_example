@@ -1,0 +1,51 @@
+{   
+    "MODE": "PaperTrading",
+
+    "DB_CONFIG": {
+        "USER": "sec_master_read",
+        "PASSWORD": "aargo.trade@123",
+        "HOST": "103.177.180.4",
+        "PORT": "5432",
+        "DATABASE": "coresystem"
+    },
+
+    "BK_SERVER_ROUTER_LIVE": "tcp://10.1.30.32:9002",
+    "BK_SERVER_ROUTER_PAPER": "tcp://10.1.18.22:9002",
+    "STRATEGY_ID": -999,
+    "CLIENT_ID": -999,
+
+    "REGION_IP_CONFIG":{
+        "OHIO": {
+            "MARKET_DATA_SERVER_ROUTER": "tcp://10.2.21.77:4455",
+            "MARKET_DATA_SERVER_PUBSUB": "tcp://10.2.21.77:5544",
+            "TRADING_SERVER_ROUTER": "tcp://10.2.26.104:5566"
+        }, 
+        "LONDON": {
+            "MARKET_DATA_SERVER_ROUTER": "tcp://10.1.31.80:4455",
+            "MARKET_DATA_SERVER_PUBSUB": "tcp://10.1.31.80:5544",
+            "TRADING_SERVER_ROUTER": "tcp://10.1.18.203:5566"
+        }, 
+
+        "PAPER": {
+            "TRADING_SERVER_ROUTER": "tcp://10.4.25.61:8899"
+        }
+    },
+
+    "ACCOUNT_ID_CONFIG": {
+        "CME": -999,
+        "EUREX": -999,
+        "EURONEXT": -999
+    },
+    
+    "CONNECTION_TIMEOUT": 10,
+    "HEARTBEAT_INTERVAL": 0.5,
+    "HEARTBEAT_TIMEOUT": 1.5,
+    "RESPONSE_TIMEOUT": 10,
+    "SYMBOL_COLNAME": "symbol_id",
+    "LOGGING_CONFIG": {
+        "LOGGING_FILEPATH": "/tmp/log.log",
+        "SOCKET_FILEPATH": "/tmp/socket_log.log",
+        "FILEHANDLER_LOGGING_LEVEL": "DEBUG",
+        "STREAMHANDLER_LOGGING_LEVEL": "DEBUG"
+    }
+}
